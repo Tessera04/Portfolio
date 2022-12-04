@@ -110,6 +110,16 @@ body{
     font-size: 1.5rem;
 }
 
+.links-sobremi{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.link-item{
+    color: var(--blanco);
+    font-size: 2rem;
+}
+
 #imgPerfil{
     height: 50%;
     width: 50%;
