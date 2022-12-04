@@ -1,10 +1,14 @@
 body{
-    background-color: rgb(20, 20, 20);
+    background-color: var(--fondo);
     margin: 0px;
 }
 
 :root{
     --blanco: white;
+    --fondo: rgb(20, 20, 20);
+    --principal: rgb(21, 138, 132);
+    --secundario: rgb(82, 87, 87);
+    --letras-claras: #aaa;
 }
 
 /*==========================HEADER=============================*/
@@ -34,7 +38,7 @@ body{
 }
 
 .menu-item{
-    color: white;
+    color: var(--blanco);
     font-size: clamp(3rem, 8vw, 8rem);
     font-family: 'Playfair Display', serif;
 
@@ -118,6 +122,11 @@ body{
 .link-item{
     color: var(--blanco);
     font-size: 2rem;
+    text-decoration: none;
+}
+
+.link-item:hover{
+    text-decoration: underline var(--secundario);
 }
 
 #imgPerfil{
@@ -127,6 +136,123 @@ body{
 }
 
 /*========Skills y Hobbies========*/
+.section__title{
+    font-size: 5rem;
+    margin-left: 1rem;
+    font-weight: 400;
+}
+
+.section__subtitle{
+    font-size: 2rem;
+    margin-left: 1rem;
+}
+
+.skills{
+    color: var(--blanco);
+}
+
+.skills__container{
+    row-gap: 0;
+    margin-left: 2rem;
+}
+
+.skills__header{
+    display: flex;
+    align-items: center;
+    margin-bottom: 2.5rem;
+    width: 90%;
+    cursor: pointer;
+}
+
+.skills__icon,
+.skills__arrow{
+    font-size: 2rem;
+    color: var(--principal);
+}
+
+.skills__icon{
+    margin-right: 0.75rem;
+}
+
+.skills__title{
+    font-size: 2rem;
+}
+
+.skills__subtitle{
+    font-size: 1.5rem;
+    color: var(--letras-claras);
+}
+
+.skills__arrow{
+    margin-left: auto;
+    transition: .4s;
+}
+
+.skills__list{
+    row-gap: 1.5rem;
+    padding-left: 2.7rem;
+    width: 85%;
+}
+
+.skills__titles{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+}
+
+.skills__name{
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+
+.skills__bar,
+.skills__percentage{
+    height: 5px;
+    border-radius: .25rem;
+}
+
+.skills__bar{
+    background-color: var(--letras-claras);
+}
+
+.skills__percentage{
+    display: block;
+    background-color: var(--principal);
+}
 
 
+.skills__html{
+    width: 90%;
+}
+.skills__css{
+    width: 80%;
+}
+.skills__js{
+    width: 60%;
+}
+.skills__git{
+    width: 70%;
+}
+
+
+.skills__SQL{
+    width: 30%;
+}
+.skills__node{
+    width: 20%;
+}
+
+.skills__close .skills__list{
+    height: 0;
+    overflow: hidden;
+}
+
+.skills__open .skills__list{
+    height: max-content;
+    margin-bottom: 2.5rem;
+}
+
+.skills__open .skills__arrow{
+    transform: rotate(-180deg);
+}
 /*==========================FOOTER=============================*/
