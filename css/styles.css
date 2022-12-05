@@ -255,4 +255,31 @@ body{
 .skills__open .skills__arrow{
     transform: rotate(-180deg);
 }
+
+/*========Trabajos Web========*/
+.proyectos{
+    color: var(--blanco);
+}
+
+.container__proyectos{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2.5rem;
+}
+
+.img__proyectos{
+    height: 40%;
+    width: 40%;
+}
+
+.btn__proyectos{
+    background-color: var(--principal);
+    color: var(--blanco);
+    height: 3.5rem;
+    width: 6rem;
+    cursor: pointer;
+    border-radius: 1rem;
+}
+
+
 /*==========================FOOTER=============================*/
