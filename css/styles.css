@@ -281,5 +281,37 @@ body{
     border-radius: 1rem;
 }
 
+/*========Form Contacto========*/
 
+.contacto{
+    color: var(--blanco);
+    margin: -5rem auto 0 auto;
+    width: 50%;
+    padding: 5rem;
+}
+
+.campo{
+    display: flex;
+    margin-bottom: 2rem;
+    gap: 2rem;
+}
+
+.campo__label{
+    flex: 0 0 9rem;
+    text-align: right;
+}
+
+.campo__field{
+    flex: 1;
+    border: 1px solid var(--blanco);
+}
+
+.campo__field-textarea{
+    height: 20rem;
+}
+
+.boton{
+    display: block;
+    margin-bottom: 2rem;
+}
 /*==========================FOOTER=============================*/
