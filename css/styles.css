@@ -314,4 +314,53 @@ body{
     display: block;
     margin-bottom: 2rem;
 }
-/*==========================FOOTER=============================*/
+/*==========================MEDIAQUERYS=============================*/
+
+/*========Celulares 480px========*/
+@media (max-width: 480px) {
+    #menu-items{
+        margin-left: 2rem;
+    }
+
+    /*========Seccion Sobre Mi========*/
+    .sobremi{
+        text-align: center;
+    }
+
+    .links-sobremi{
+        display: grid;
+    }
+
+    #imgPerfil{
+        height: 100%;
+        width: 100%;
+    }
+
+    .section__title{
+        font-size: 3rem;
+    }
+
+    .contacto{
+        margin: 0;
+        width: 100%;
+        padding: 0;
+    }
+
+    .campo{
+        display: grid;
+    }
+
+    .campo__label{
+        text-align: left;
+    }
+}
+
+/*========Tablets 768px========*/
+@media (max-width: 768px) {
+    /*========Seccion Sobre Mi========*/
+    .sobremi{
+        display: block;
+    }
+
+}
+
