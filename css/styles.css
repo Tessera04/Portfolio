@@ -316,13 +316,14 @@ body{
 }
 /*==========================MEDIAQUERYS=============================*/
 
-/*========Celulares 480px========*/
+/*=======================Celulares 480px============================*/
 @media (max-width: 480px) {
+
     #menu-items{
         margin-left: 2rem;
     }
 
-    /*========Seccion Sobre Mi========*/
+/*========Seccion Sobre Mi========*/
     .sobremi{
         text-align: center;
     }
@@ -335,11 +336,12 @@ body{
         height: 100%;
         width: 100%;
     }
-
+/*========Skills y Hobbies========*/
     .section__title{
         font-size: 3rem;
     }
 
+/*========Form Contacto========*/
     .contacto{
         margin: 0;
         width: 100%;
@@ -355,7 +357,7 @@ body{
     }
 }
 
-/*========Tablets 768px========*/
+/*===============================Tablets 768px============================*/
 @media (max-width: 768px) {
     /*========Seccion Sobre Mi========*/
     .sobremi{
