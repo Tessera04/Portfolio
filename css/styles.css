@@ -358,10 +358,26 @@ body{
 }
 
 /*===============================Tablets 768px============================*/
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
+
+
     /*========Seccion Sobre Mi========*/
     .sobremi{
-        display: block;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+    }
+
+    .texto-sobremi{
+        order: 2;
+    }
+
+    #imgPerfil{
+        order: 1;
+        height: 100%;
+        width: 100%;
     }
 
 }
